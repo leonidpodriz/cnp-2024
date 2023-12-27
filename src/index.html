@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CNP | 2024</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body>
+<header class="shadow">
+    <div class="container mx-auto p-2 flex justify-between flex-wrap items-center">
+        <div class="flex items-center space-x-5 font-semibold">
+            <img src="../assets/logo.svg" alt="logo" class="h-12">
+        </div>
+
+        <div id="hamburger"
+             class="md:hidden flex flex-col justify-between w-8 h-8 border-transparent border-2 hover:border-green-500 p-1 rounded">
+            <span class="rounded bg-black h-1 block"></span>
+            <span class="rounded bg-black h-1 block"></span>
+            <span class="rounded bg-black h-1 block"></span>
+        </div>
+
+        <nav class="md:basis-auto md:h-auto basis-full overflow-hidden bg-white h-0 transition-height duration-500 ease-in-out"
+             id="nav">
+            <ul class="md:flex-row md:space-y-0 md:p-0 md:space-x-10 flex flex-col space-y-5 py-10">
+                <li><a class="font-semibold underline-offset-4 hover:underline underline" href="#">
+                    Home
+                </a></li>
+                <li><a class="font-semibold underline-offset-4 hover:underline" href="#">
+                    About
+                </a></li>
+                <li><a class="font-semibold underline-offset-4 hover:underline" href="#">
+                    Dates
+                </a></li>
+                <li><a class="font-semibold underline-offset-4 hover:underline" href="#">
+                    Chairs
+                </a></li>
+                <li><a class="font-semibold underline-offset-4 hover:underline" href="#">
+                    Contacts
+                </a></li>
+                <li><a class="font-semibold underline-offset-4 hover:underline" href="#">
+                    Submit
+                </a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="bg-gray-700" style="background: url(../assets/bg.png) center center; background-size: cover">
+    <div class="md:flex-row-reverse container mx-auto flex flex-wrap justify-around px-5 py-24 md:py-48 items-center">
+        <img src="../assets/logo.svg" alt="logo" class="h-64">
+        <div class="text-gray-100 text-center md:text-left">
+            <p class="uppercase">30 February 2024, Borys Grinchenko Kyiv University, Kyiv</p>
+            <h1 class="text-3xl font-bold md:text-4xl">Cybersecurity and Network Protection</h1>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
