@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,8 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CNP | 2024</title>
 </head>
+
 <body>
-<header class="shadow">
+<header class="shadow" id="home">
     <div class="container mx-auto p-2 flex justify-between flex-wrap items-center">
         <div class="flex items-center space-x-5 font-semibold">
             <img src="img/logo.svg" alt="logo" class="h-12">
@@ -23,25 +25,27 @@
 
         <nav class="md:basis-auto md:h-auto basis-full overflow-hidden bg-white h-0 transition-height duration-500 ease-in-out"
              id="nav">
-            <ul class="md:flex-row md:space-y-0 md:p-0 md:space-x-10 flex flex-col space-y-5 py-10">
-                <li><a class="font-semibold underline-offset-4 hover:underline underline" href="#">
+            <ul class="md:flex-row md:space-y-0 md:p-0 md:space-x-10 flex flex-col space-y-5 py-10 items-center">
+                <li><a class="font-semibold underline-offset-4 hover:underline underline" href="#home">
                     Home
                 </a></li>
-                <li><a class="font-semibold underline-offset-4 hover:underline" href="#">
+                <li><a class="font-semibold underline-offset-4 hover:underline" href="#about">
                     About
                 </a></li>
-                <li><a class="font-semibold underline-offset-4 hover:underline" href="#">
+                <li><a class="font-semibold underline-offset-4 hover:underline" href="#dates">
                     Dates
                 </a></li>
-                <li><a class="font-semibold underline-offset-4 hover:underline" href="#">
+                <li><a class="font-semibold underline-offset-4 hover:underline" href="#chairs">
                     Chairs
                 </a></li>
-                <li><a class="font-semibold underline-offset-4 hover:underline" href="#">
+                <li><a class="font-semibold underline-offset-4 hover:underline" href="#contacts">
                     Contacts
                 </a></li>
-                <li><a class="font-semibold underline-offset-4 hover:underline" href="#">
-                    Submit
-                </a></li>
+                <li>
+                    <a class="font-semibold underline-offset-4 hover:underline bg-gradient-to-r px-5 py-2 rounded inline-block text-white from-emerald-600 to-emerald-800"
+                       href="#submit">
+                        Submit
+                    </a></li>
             </ul>
         </nav>
     </div>
@@ -84,26 +88,54 @@
     </div>
 </section>
 
-<section id="conference-scope" class="container px-5 py-10 space-y-10 mx-auto md:flex md:items-center">
+<section id="about" class="container px-5 py-10 space-y-10 mx-auto md:flex md:items-center">
     <div class="md:w-1/2">
         <h2 class="text-2xl font-bold mb-3">Conference Scope</h2>
-        <p class="mb-2">The objective of this conference is to provide opportunities and platform for exchange of
-            information on theoretical, scientific and practical achievements with the discussion on challenges
-            encountered for researchers, scientists, scholars and engineers in the field of Network and Information
-            Security.</p>
-        <p class="mb-2">Also, a great attention has to be payed to the 5G security and privacy aspects, which are one of
-            the most importance nowadays.</p>
-        <hr class="my-5">
+        <div class="space-y-2 mb-5">
+            <p>The "Cybersecurity and Network Protection" conference is an essential gathering for experts, researchers,
+                and practitioners in the field of digital security. Our scope encompasses a wide range of topics,
+                focusing on the latest trends, challenges, and advancements in cybersecurity and network protection.</p>
+
+            <p>Key areas of discussion will include:</p>
+            <ul class="list-disc space-y-1">
+                <li>Emerging Threats and Vulnerabilities: Understanding the evolving landscape of cyber threats and
+                    exploring new vulnerabilities in both software and hardware.
+                </li>
+                <li>Innovative Defense Strategies: Showcasing cutting-edge techniques and tools for defending against
+                    cyber attacks, including AI and machine learning-based solutions.
+                </li>
+                <li>Network Security: Delving into the intricacies of securing both private and public networks, with a
+                    special focus on new protocols and encryption methods.
+                </li>
+                <li>Cybersecurity Policy and Law: Examining the legal and regulatory framework surrounding
+                    cybersecurity, and discussing best practices for compliance and governance.
+                </li>
+                <li>Incident Response and Management: Sharing insights on effective strategies for responding to and
+                    managing security breaches and cyber incidents.
+                </li>
+                <li>Data Protection and Privacy: Addressing the challenges in safeguarding sensitive data and
+                    maintaining user privacy in an increasingly connected world.
+                </li>
+                <li>Future Technologies: Exploring the implications of emerging technologies like quantum computing and
+                    blockchain on cybersecurity.
+                </li>
+            </ul>
+            <p>The conference will feature keynote speeches, panel discussions, and technical sessions led by
+                renowned experts. It will also provide a platform for networking, collaboration, and the sharing of
+                ideas to drive forward the field of cybersecurity.</p>
+            <p>Join us as we delve into these critical topics and work together towards a more secure digital future.
+            </p>
+        </div>
         <h3 class="text-xl font-bold mb-3">Topics</h3>
-        <ul class="flex flex-wrap text-gray-100 text-xs">
-            <li class="mr-2 mb-2 px-2 py-1 rounded-full bg-emerald-600">CYBERSECURITY AND CRYPTOGRAPHY</li>
-            <li class="mr-2 mb-2 px-2 py-1 rounded-full bg-emerald-600">MACHINE LEARNING AND TELECOMMUNICATIONS IN
-                CYBERSECURITY
-            </li>
-            <li class="mr-2 mb-2 px-2 py-1 rounded-full bg-emerald-600">WIRELESS NETWORK PRIVACY</li>
-            <li class="mr-2 mb-2 px-2 py-1 rounded-full bg-emerald-600">RISK MANAGEMENT AND ECONOMIC SECURITY</li>
-            <li class="mr-2 mb-2 px-2 py-1 rounded-full bg-emerald-600">CYBERSECURITY AND COMPUTER SCIENCE EDUCATION
-            </li>
+        <ul class="flex flex-wrap text-gray-100 text-xs uppercase">
+            <li class="mr-2 mb-2 px-2 py-1 rounded-full bg-emerald-600">Emerging Threats and Vulnerabilities</li>
+            <li class="mr-2 mb-2 px-2 py-1 rounded-full bg-emerald-600">Innovative Defense Strategies</li>
+            <li class="mr-2 mb-2 px-2 py-1 rounded-full bg-emerald-600">Network Security</li>
+            <li class="mr-2 mb-2 px-2 py-1 rounded-full bg-emerald-600">Cybersecurity Policy and Law</li>
+            <li class="mr-2 mb-2 px-2 py-1 rounded-full bg-emerald-600">Incident Response and Management</li>
+            <li class="mr-2 mb-2 px-2 py-1 rounded-full bg-emerald-600">Data Protection and Privacy</li>
+            <li class="mr-2 mb-2 px-2 py-1 rounded-full bg-emerald-600">Future Technologies</li>
+            <li class="mr-2 mb-2 px-2 py-1 rounded-full bg-emerald-600">Future Technologies</li>
         </ul>
     </div>
     <div class="md:w-1/2 flex justify-center">
@@ -111,12 +143,54 @@
     </div>
 </section>
 
-<section class="px-5 py-10">
+<section id="dates"
+         class="container px-5 py-10 mx-auto md:flex md:items-start text-center flex-wrap space-y-10 md:space-y-0">
+    <div class="md:w-1/2">
+        <h2 class="text-2xl font-bold mb-3">Important Dates</h2>
+        <p>Paper submission deadline: February 7, 2024</p>
+        <p>Notification of acceptance: February 14, 2024</p>
+        <p>Camera-ready submission: February 21, 2024</p>
+        <p>Workshop: February 28, 2024</p>
+    </div>
+    <div class="md:w-1/2">
+        <h2 class="text-2xl font-bold mb-3">Participation Fees</h2>
+        <p>Registration fee: free</p>
+    </div>
+</section>
+
+<section id="submit" class="container px-5 py-10 space-y-10 mx-auto md:flex md:items-center">
+    <div class="md:w-1/2">
+        <img src="img/submit.png" alt="" class="w-full">
+    </div>
+    <div class="md:w-1/2 space-y-3">
+        <h2 class="text-2xl font-bold mb-3">Call for Contribution</h2>
+        <p>We invite academic researchers and practitioners to share their work by giving a talk or presenting a poster
+            in pure English. Contributions should be submitted through EasyChair in two different categories:</p>
+        <ul class="list-decimal">
+            <li>A short paper (with references) but has between 5-9 CEUR-WS pages.</li>
+            <li>A regular paper has at least 10 CEUR-WS pages and an appropriate number of references.</li>
+        </ul>
+        <p>When designing your сontribution, use the new Word Template in CEURART for Two Column. Papers designed
+            according to other templates will be rejected (and see an example).</p>
+        <p>When preparing materials, pay attention to the restrictions:</p>
+        <ul class="list-decimal">
+            <li>One author can submit up to two сontributions.</li>
+            <li>The number of authors in one сontribution should be no more than five.</li>
+            <li>Self-citation should not exceed 30% (of the total number of sources).</li>
+        </ul>
+        <p>Contributions will be reviewed and selected based on relevance and quality. Contributors will have the option
+            to indicate their preference for the format of the presentation, but organizers reserve the right to the
+            final decision in the matter.</p>
+    </div>
+</section>
+
+
+<section id="chairs" class="px-5 py-10">
     <div class="container mx-auto">
         <h2 class="text-center text-2xl font-bold mb-20">Conference Organizing Committee</h2>
     </div>
     <div class="container mx-auto flex flex-wrap justify-around items-center">
-        <div class="md:w-1/5 px-5 box-border mb-10 flex justify-center items-center flex-col text-center">
+        <div class="md:w-1/3 px-5 box-border mb-10 flex justify-center items-center flex-col text-center">
             <img class="h-40 w-40 rounded-full mb-5"
                  src="https://cpits.kubg.edu.ua/assets/img/chairs/volodymyr_sokolov.jpg" alt="">
             <h3 class="font-bold mb-1">Volodymyr Sokolov
@@ -128,65 +202,66 @@
             </h3>
             <p>PhD, Assoc. Prof. Editor Borys Grinchenko Kyiv University</p>
         </div>
-        <div class="md:w-1/5 px-5 box-border mb-10 flex justify-center items-center flex-col text-center">
+        <div class="md:w-1/3 px-5 box-border mb-10 flex justify-center items-center flex-col text-center">
             <img class="h-40 w-40 rounded-full mb-5"
-                 src="https://cpits.kubg.edu.ua/assets/img/chairs/volodymyr_sokolov.jpg" alt="">
-            <h3 class="font-bold mb-1">Volodymyr Sokolov
+                 src="https://cpits.kubg.edu.ua/assets/img/chairs/vasyl_ustimenko.jpg" alt="">
+            <h3 class="font-bold mb-1">Vasyl Ustimenko
                 <a href="#">
                     <svg class="inline" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
                         <path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/>
                     </svg>
                 </a>
             </h3>
-            <p>PhD, Assoc. Prof. Editor Borys Grinchenko Kyiv University</p>
+            <p>DSc, Prof. Editor Royal Holloway, University of London</p>
         </div>
-        <div class="md:w-1/5 px-5 box-border mb-10 flex justify-center items-center flex-col text-center">
+        <div class="md:w-1/3 px-5 box-border mb-10 flex justify-center items-center flex-col text-center">
             <img class="h-40 w-40 rounded-full mb-5"
-                 src="https://cpits.kubg.edu.ua/assets/img/chairs/volodymyr_sokolov.jpg" alt="">
-            <h3 class="font-bold mb-1">Volodymyr Sokolov
+                 src="https://cpits.kubg.edu.ua/assets/img/chairs/tamara_radivilova.jpg" alt="">
+            <h3 class="font-bold mb-1">Tamara Radivilova
                 <a href="#">
                     <svg class="inline" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
                         <path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/>
                     </svg>
                 </a>
+
             </h3>
-            <p>PhD, Assoc. Prof. Editor Borys Grinchenko Kyiv University</p>
+            <p>DSc, Prof. Editor Kharkiv National University of Radioelectronics</p>
         </div>
-        <div class="md:w-1/5 px-5 box-border mb-10 flex justify-center items-center flex-col text-center">
+        <div class="md:w-1/3 px-5 box-border mb-10 flex justify-center items-center flex-col text-center">
             <img class="h-40 w-40 rounded-full mb-5"
-                 src="https://cpits.kubg.edu.ua/assets/img/chairs/volodymyr_sokolov.jpg" alt="">
-            <h3 class="font-bold mb-1">Volodymyr Sokolov
+                 src="https://cpits.kubg.edu.ua/assets/img/chairs/mariya_nazarkevych.jpg" alt="">
+            <h3 class="font-bold mb-1">Mariya Nazarkevych
                 <a href="#">
                     <svg class="inline" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
                         <path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/>
                     </svg>
                 </a>
             </h3>
-            <p>PhD, Assoc. Prof. Editor Borys Grinchenko Kyiv University</p>
+            <p>DSc, Prof. Editor Lviv Polytechnic National University</p>
         </div>
-        <div class="md:w-1/5 px-5 box-border mb-10 flex justify-center items-center flex-col text-center">
+        <div class="md:w-1/3 px-5 box-border mb-10 flex justify-center items-center flex-col text-center">
             <img class="h-40 w-40 rounded-full mb-5"
-                 src="https://cpits.kubg.edu.ua/assets/img/chairs/volodymyr_sokolov.jpg" alt="">
-            <h3 class="font-bold mb-1">Volodymyr Sokolov
+                 src="https://cpits.kubg.edu.ua/assets/img/organizing-committee/pavlo_skladannyi.jpg" alt="">
+            <h3 class="font-bold mb-1">Pavlo Skladannyi
                 <a href="#">
                     <svg class="inline" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
                         <path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/>
                     </svg>
                 </a>
             </h3>
-            <p>PhD, Assoc. Prof. Editor Borys Grinchenko Kyiv University</p>
+            <p>PhD, Assoc. Prof. Publicity Chair Borys Grinchenko Kyiv University</p>
         </div>
-        <div class="md:w-1/5 px-5 box-border mb-10 flex justify-center items-center flex-col text-center">
+        <div class="md:w-1/3 px-5 box-border mb-10 flex justify-center items-center flex-col text-center">
             <img class="h-40 w-40 rounded-full mb-5"
-                 src="https://cpits.kubg.edu.ua/assets/img/chairs/volodymyr_sokolov.jpg" alt="">
-            <h3 class="font-bold mb-1">Volodymyr Sokolov
+                 src="https://cpits.kubg.edu.ua/assets/img/organizing-committee/tetiana_opryshko.jpg" alt="">
+            <h3 class="font-bold mb-1">Tetiana Opryshko
                 <a href="#">
                     <svg class="inline" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
                         <path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/>
                     </svg>
                 </a>
             </h3>
-            <p>PhD, Assoc. Prof. Editor Borys Grinchenko Kyiv University</p>
+            <p>PhD Plagiarism Screening Manager Borys Grinchenko Kyiv University</p>
         </div>
     </div>
 </section>
@@ -195,26 +270,136 @@
     <div class="container mx-auto">
         <h2 class="text-center text-2xl font-bold mb-10">Programme Committee</h2>
     </div>
-    <div class="container mx-auto flex flex-wrap justify-around items-center">
-        <div class="md:w-1/4 mb-10 flex justify-center items-center flex-col text-center border-2 rounded-2xl p-5">
-            <h3 class="font-bold mb-1">Volodymyr Sokolov
+    <div class="container mx-auto grid md:grid-cols-3 gap-3">
+        <div class="flex justify-center items-center flex-col text-center border-2 rounded-2xl p-5">
+            <h3 class="font-bold mb-1">Ivan Opirskyy
                 <a href="#">
                     <svg class="inline" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
                         <path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/>
                     </svg>
                 </a>
             </h3>
-            <p>PhD, Assoc. Prof. Editor Borys Grinchenko Kyiv University</p>
+            <p>DSc, Prof., Lviv Polytechnic National University, Ukraine</p>
         </div>
-        <div class="md:w-1/4 mb-10 flex justify-center items-center flex-col text-center border-2 rounded-2xl p-5">
-            <h3 class="font-bold mb-1">Volodymyr Sokolov
+        <div class="flex justify-center items-center flex-col text-center border-2 rounded-2xl p-5">
+            <h3 class="font-bold mb-1">Oleksandr Kuznetsov
                 <a href="#">
                     <svg class="inline" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
                         <path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/>
                     </svg>
                 </a>
             </h3>
-            <p>PhD, Assoc. Prof. Editor Borys Grinchenko Kyiv University</p>
+            <p>DSc, Prof., University of Macerata, Italy</p>
+        </div>
+        <div class="flex justify-center items-center flex-col text-center border-2 rounded-2xl p-5">
+            <h3 class="font-bold mb-1">Maryna Yevdokymenko
+                <a href="#">
+                    <svg class="inline" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/>
+                    </svg>
+                </a>
+            </h3>
+            <p>DSc, Prof., Kharkiv National University of Radioelectronics, Ukraine</p>
+        </div>
+        <div class="flex justify-center items-center flex-col text-center border-2 rounded-2xl p-5">
+            <h3 class="font-bold mb-1">Oleksii Smirnov
+                <a href="#">
+                    <svg class="inline" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/>
+                    </svg>
+                </a>
+            </h3>
+            <p>DSc, Prof., Central Ukrainian National Technical University, Ukraine</p>
+        </div>
+        <div class="flex justify-center items-center flex-col text-center border-2 rounded-2xl p-5">
+            <h3 class="font-bold mb-1">Rǎzvan Bocu
+                <a href="#">
+                    <svg class="inline" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/>
+                    </svg>
+                </a>
+            </h3>
+            <p>DSc, Prof., Universitatea Transilvania din Brașov, Romania</p>
+        </div>
+        <div class="flex justify-center items-center flex-col text-center border-2 rounded-2xl p-5">
+            <h3 class="font-bold mb-1">Sergiy Gnatyuk
+                <a href="#">
+                    <svg class="inline" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/>
+                    </svg>
+                </a>
+            </h3>
+            <p>DSc, Prof., National Aviation University, Ukraine</p>
+        </div>
+        <div class="flex justify-center items-center flex-col text-center border-2 rounded-2xl p-5">
+            <h3 class="font-bold mb-1">Dmytro Ageyev
+                <a href="#">
+                    <svg class="inline" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/>
+                    </svg>
+                </a>
+            </h3>
+            <p>DSc, Prof., Kharkiv National University of Radioelectronics, Ukraine</p>
+        </div>
+        <div class="flex justify-center items-center flex-col text-center border-2 rounded-2xl p-5">
+            <h3 class="font-bold mb-1">Maksim Iavich
+                <a href="#">
+                    <svg class="inline" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/>
+                    </svg>
+                </a>
+            </h3>
+            <p>DSc, Prof., Caucasus University, Georgia</p>
+        </div>
+        <div class="flex justify-center items-center flex-col text-center border-2 rounded-2xl p-5">
+            <h3 class="font-bold mb-1">Serhii Toliupa
+                <a href="#">
+                    <svg class="inline" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/>
+                    </svg>
+                </a>
+            </h3>
+            <p>DSc, Prof., Taras Shevchenko National University of Kyiv, Ukraine</p>
+        </div>
+        <div class="flex justify-center items-center flex-col text-center border-2 rounded-2xl p-5">
+            <h3 class="font-bold mb-1">Marek Aleksander
+                <a href="#">
+                    <svg class="inline" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/>
+                    </svg>
+                </a>
+            </h3>
+            <p>DSc, Prof., Panstwowa Wyzsza Szkoła Zawodowa w Nowym Saczu, Poland</p>
+        </div>
+        <div class="flex justify-center items-center flex-col text-center border-2 rounded-2xl p-5">
+            <h3 class="font-bold mb-1">Viktor Shevchenko
+                <a href="#">
+                    <svg class="inline" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/>
+                    </svg>
+                </a>
+            </h3>
+            <p>DSc, Prof., Institute of Software Systems of the National Academy of Sciences of Ukraine</p>
+        </div>
+        <div class="flex justify-center items-center flex-col text-center border-2 rounded-2xl p-5">
+            <h3 class="font-bold mb-1">Emanuele Frontoni
+                <a href="#">
+                    <svg class="inline" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/>
+                    </svg>
+                </a>
+            </h3>
+            <p>DSc, Prof., Marche Polytechnic University, Italy</p>
+        </div>
+        <div class="flex justify-center items-center flex-col text-center border-2 rounded-2xl p-5">
+            <h3 class="font-bold mb-1">Valeriy Lakhno
+                <a href="#">
+                    <svg class="inline" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path d="M294.8 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.8 360.8h-29.8v-207.5h29.8zm-14.9-231.1a19.6 19.6 0 1 1 19.6-19.6 19.6 19.6 0 0 1 -19.6 19.6zM300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9C410 318.4 368.4 369 300 369z"/>
+                    </svg>
+                </a>
+            </h3>
+            <p>DSc, Prof., National University of Life and Environmental Sciences of Ukraine</p>
         </div>
     </div>
 </section>
@@ -235,7 +420,7 @@
     </div>
 </section>
 
-<section>
+<section id="contacts">
     <div class="container mx-auto px-5 py-10">
         <h2 class="font-bold text-2xl text-center my-10">Contact Us</h2>
         <div class="flex flex-wrap justify-around space-y-5 md:space-y-0">
@@ -244,7 +429,7 @@
                 <ul>
                     <li>Borys Grinchenko Kyiv University</li>
                     <li>13b Levka Lukianenka str., Kyiv, 04212, Ukraine</li>
-                    <li><a href="mailto:cpits@kubg.edu.ua">cpits@kubg.edu.ua</a></li>
+                    <li><a class="underline" href="mailto:cpits@kubg.edu.ua">cpits@kubg.edu.ua</a></li>
                 </ul>
             </div>
 
